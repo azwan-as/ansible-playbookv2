@@ -1,0 +1,8 @@
+---
+- name: Creates a file
+  hosts: all
+  tasks:
+  - name: Creates a file or modify timestamp if already exists
+    win_file:
+      path: C:\Temp\test.conf
+      state: touch
