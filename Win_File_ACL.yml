@@ -1,0 +1,9 @@
+- name: Add IIS_IUSRS allow rights
+  win_acl:
+    path: C:\Temp\test.conf
+    user: xoaasatar
+    rights: FullControl
+    type: allow
+    state: present
+    inherit: ContainerInherit, ObjectInherit
+    propagation: 'None'
