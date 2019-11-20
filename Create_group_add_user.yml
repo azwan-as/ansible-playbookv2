@@ -1,0 +1,16 @@
+---
+- name: Create Users Group and add user
+  hosts: all
+  tasks:
+  - name: Create a new group
+    win_group:
+      name: Master_of_Universe
+      description: Deploy Group
+      state: present
+
+  - name: Ensure user aasatar is present
+    win_user:
+      name: bob
+      state: present
+      groups:
+        - Master_of_Universe
