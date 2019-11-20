@@ -8,4 +8,7 @@
       - Updates
       - CriticalUpdates
       - SecurityUpdates
+      - UpdateRollups
+      - Guidance
+      - DeveloperKits
       state: installed
