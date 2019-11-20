@@ -10,7 +10,7 @@
 
   - name: Ensure user aasatar is present
     win_user:
-      name: bob
+      name: aasatar
       state: present
       groups:
         - Master_of_Universe
