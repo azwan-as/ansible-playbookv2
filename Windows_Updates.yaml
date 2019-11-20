@@ -12,3 +12,4 @@
       - Guidance
       - DeveloperKits
       state: installed
+      reboot: yes
