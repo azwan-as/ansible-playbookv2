@@ -1,0 +1,11 @@
+---
+- name: Checking the file availability
+  hosts: all
+  tasks:
+  - name: Check the info on the file if the file exists
+    win_stat:
+      path: C:\temp\test.conf
+    register: out
+  - name: Showing statistics
+    debug:
+      var: out
